@@ -13,10 +13,10 @@ pipeline{
             sh 'chmod +x ./build.sh'
             sh './build.sh'
 
-        }
+            }
         
+         }
     }
-}
 
 post{
     always{
@@ -27,6 +27,7 @@ post{
             def buildStatus = currentBuild.currentResult
 
             mail to: 'subashm.study@gmail.com',
-        }
+             }
+          }
     }
 }
