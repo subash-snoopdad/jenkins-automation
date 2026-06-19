@@ -15,7 +15,7 @@ pipeline{
 
             }
         
-         }
+        }
     }
 
 post{
@@ -27,7 +27,6 @@ post{
             def buildStatus = currentBuild.currentResult
 
             mail to: 'subashm.study@gmail.com',
-             }
-          }
+        }
     }
 }
